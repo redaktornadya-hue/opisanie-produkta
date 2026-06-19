@@ -517,19 +517,24 @@ a{color:#1F89FF;text-decoration:none}
 <!-- SLIDE 9: Аналогия с тортом -->
 <div class="slide lite" id="s8">
   <div class="content">
-    <p class="h1 anim d1">Контекст влияет на результат</p>
-    <div class="twocol-content anim d2">
+    <p class="h1 anim d1" style="font-size:56px">Контекст влияет на результат</p>
+    <div class="twocol-content anim d2" style="align-items:flex-start">
       <div>
         <p class="tcol-h">Вариант 1</p>
-        <p class="body" style="margin-top:16px;font-size:36px">«Сделайте торт»</p>
-        <div class="img-ph" style="height:360px;margin-top:20px">Иллюстрация: обычный, скучный торт</div>
+        <div style="position:relative;margin-top:20px">
+          <img src="images/slide9 left.png" style="width:100%;border-radius:16px;object-fit:contain;display:block">
+          <div style="position:absolute;inset:0;border-radius:16px;background:rgba(15,17,25,0.82);color:#fff;font-size:28px;line-height:1.5;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px;opacity:0;transition:opacity .25s">«Сделайте торт»</div>
+        </div>
       </div>
       <div>
         <p class="tcol-h">Вариант 2</p>
-        <p class="body" style="margin-top:16px;font-size:36px">«Нужен торт на день рождения дочери: <br>7 лет, любит клубнику и единорогов, гостей будет 15 человек»</p>
-        <div class="img-ph" style="height:280px;margin-top:20px">Иллюстрация: тематический детский торт с единорогами и клубникой</div>
+        <div style="position:relative;margin-top:20px">
+          <img src="images/slide9 right.png" style="width:100%;border-radius:16px;object-fit:contain;display:block">
+          <div style="position:absolute;inset:0;border-radius:16px;background:rgba(15,17,25,0.82);color:#fff;font-size:28px;line-height:1.5;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px;opacity:0;transition:opacity .25s">«Нужен торт на день рождения дочери: 7 лет, любит клубнику и единорогов, гостей будет 15 человек»</div>
+        </div>
       </div>
     </div>
+    <style>.twocol-content div:has(> img) > div:last-child:hover{opacity:1!important} .twocol-content div:has(> img):hover > div:last-child{opacity:1!important}</style>
   </div>
 </div>
 
@@ -579,9 +584,9 @@ a{color:#1F89FF;text-decoration:none}
 <div class="slide lite" id="s11">
   <div class="content">
     <p class="h1 anim d1">Всегда лучше сначала составить план</p>
-    <div class="twocol-content anim d2">
-      <div class="img-ph" style="flex:1">Иллюстрация: человек увлекся мытьем окон, внутри комнаты беспорядок</div>
-      <div class="img-ph" style="flex:1">Иллюстрация: человек наводит порядок, рядом список задач</div>
+    <div class="twocol-content anim d2" style="align-items:flex-start">
+      <img src="images/slide12 left.png" style="width:100%;border-radius:16px;object-fit:contain;display:block">
+      <img src="images/slide12 right.png" style="width:100%;border-radius:16px;object-fit:contain;display:block">
     </div>
   </div>
 </div>
@@ -652,7 +657,7 @@ a{color:#1F89FF;text-decoration:none}
         <div class="poll-num">1</div><p class="poll-text">Вы создаете сложный сервис с несколькими модулями для клиентов</p><span class="poll-result"></span>
       </div>
       <div class="poll-opt" onclick="pollAnswer(this,'poll15',true)">
-        <div class="poll-num">2</div><p class="poll-text">Вы делаете простой парсер для себя, чтобы собирать новости по интересам</p><span class="poll-result"></span>
+        <div class="poll-num">2</div><p class="poll-text">Вы делаете простой одностраничный лендинг без дополнительных функций для себя</p><span class="poll-result"></span>
       </div>
       <div class="poll-opt" onclick="pollAnswer(this,'poll15',false)">
         <div class="poll-num">3</div><p class="poll-text">Вы работаете в команде над продуктом для бизнеса</p><span class="poll-result"></span>
@@ -687,7 +692,7 @@ a{color:#1F89FF;text-decoration:none}
 <!-- SLIDE 19: Люди нанимают продукт -->
 <div class="slide lite" id="s19">
   <div class="content">
-    <p class="h1 anim d1">Пользователь не покупает продукт, а нанимает его на работу</p>
+    <p class="h1 anim d1">Пользователь не покупает продукт, а&nbsp;нанимает его на работу</p>
     <div class="anim d2" style="display:grid;grid-template-columns:auto 1fr;gap:80px;align-items:start;margin-top:40px">
       <!-- Left: vertical flow, all blocks same width as longest -->
       <div style="display:flex;flex-direction:column;align-items:stretch;gap:0;width:fit-content">
@@ -707,7 +712,7 @@ a{color:#1F89FF;text-decoration:none}
 <div class="slide lite" id="s20">
   <div class="content">
     <p class="h1 anim d1">Зачем нужен JTBD</p>
-    <div class="important anim d2">Фреймворк JTBD помогает понять реальную потребность пользователя и сосредоточиться на конечном результате, а не на отдельных функциях. <br>Это позволяет дать нейросети нужный контекст и создавать действительно полезный продукт.<div class="imp-l">важно</div></div>
+    <div class="important anim d2">Фреймворк JTBD помогает понять реальную потребность пользователя и&nbsp;сосредоточиться на конечном результате, а не на отдельных функциях. <br>Это позволяет дать нейросети нужный контекст и создавать действительно полезный продукт.<div class="imp-l">важно</div></div>
   </div>
 </div>
 
@@ -747,8 +752,8 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d2" style="margin-top:32px">
       <thead><tr><th>Неправильно</th><th>Правильно по JTBD</th></tr></thead>
       <tbody>
-        <tr><td>Пользователь хочет записаться на маникюр.</td>
-            <td>Когда я хочу сделать маникюр к важному событию <span class="purple">[ситуация]</span>, я хочу быстро найти свободное время у проверенного мастера <span class="purple">[действие]</span>, чтобы не тратить время на звонки и не переживать, что не успею записаться <span class="purple">[результат]</span>.</td></tr>
+        <tr><td>Пользователь хочет записаться на маникюр</td>
+            <td>Когда я хочу сделать маникюр к важному событию <span class="purple">[ситуация]</span>, я хочу быстро найти свободное время у проверенного мастера <span class="purple">[действие]</span>, чтобы не тратить время на звонки и не переживать, что не успею записаться <span class="purple">[результат]</span></td></tr>
       </tbody>
     </table>
     <p class="h2 reveal" style="margin-top:32px">Какие функции нужны продукту</p>
@@ -768,13 +773,14 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d2" style="margin-top:32px">
       <thead><tr><th>Неправильно</th><th>Правильно по JTBD</th></tr></thead>
       <tbody>
-        <tr><td>Пользователь хочет получать новости.</td>
-            <td>Когда я начинаю рабочий день <span class="purple">[ситуация]</span>, я хочу быстро узнать главные новости в моей отрасли <span class="purple">[действие]</span>, чтобы быть в курсе трендов и не тратить час на просмотр десятка сайтов <span class="purple">[результат]</span>.</td></tr>
+        <tr><td>Пользователь хочет получать новости</td>
+            <td>Когда я начинаю рабочий день <span class="purple">[ситуация]</span>, я хочу быстро узнать главные новости в моей отрасли <span class="purple">[действие]</span>, чтобы быть в курсе трендов и не тратить час на просмотр десятка сайтов <span class="purple">[результат]</span></td></tr>
       </tbody>
     </table>
     <p class="h2 reveal" style="margin-top:32px">Какие функции нужны продукту</p>
     <ul class="blist" style="margin-top:12px">
       <li class="reveal">Сбор новостей из нескольких источников.</li>
+      <li class="reveal">Проверка достоверности информации.</li>
       <li class="reveal">Фильтрация главного.</li>
       <li class="reveal">Короткий дайджест.</li>
     </ul>
@@ -789,8 +795,8 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d2" style="margin-top:32px">
       <thead><tr><th>Неправильно</th><th>Правильно по JTBD</th></tr></thead>
       <tbody>
-        <tr><td>Пользователь хочет задать вопрос боту.</td>
-            <td>Когда у меня возник вопрос по продукту в нерабочее время <span class="purple">[ситуация]</span>, я&nbsp;хочу быстро получить ответ <span class="purple">[действие]</span>, чтобы не ждать до утра и не искать информацию самостоятельно <span class="purple">[результат]</span>.</td></tr>
+        <tr><td>Пользователь хочет задать вопрос боту</td>
+            <td>Когда у меня возник вопрос по продукту в нерабочее время <span class="purple">[ситуация]</span>, я&nbsp;хочу быстро получить ответ <span class="purple">[действие]</span>, чтобы не ждать до утра и не искать информацию самостоятельно <span class="purple">[результат]</span></td></tr>
       </tbody>
     </table>
     <p class="h2 reveal" style="margin-top:32px">Какие функции нужны продукту</p>
@@ -805,7 +811,7 @@ a{color:#1F89FF;text-decoration:none}
 <!-- SLIDE 25: Главная ошибка JTBD -->
 <div class="slide lite" id="s25">
   <div class="content-flex">
-    <p class="h1 anim d1">Главная ошибка при формулировке JTBD</p>
+    <p class="h1 anim d1" style="white-space:nowrap;font-size:68px">Главная ошибка при формулировке JTBD</p>
     <div class="important anim d2" style="margin-top:24px">Наиболее распространенная ошибка — описывать функцию или продукт вместо «работы» пользователя.<div class="imp-l">важно</div></div>
 
     <div class="slider-wrap anim d3" style="margin-top:32px;flex:1;min-height:0">
@@ -997,10 +1003,10 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d3" style="margin-top:20px;font-size:34px">
       <thead><tr><th>Потребность пользователя (JTBD)</th><th>Функция MVP</th></tr></thead>
       <tbody>
-        <tr class="reveal"><td>Найти проверенного мастера.</td><td>Просмотр мастеров с рейтингом и отзывами.</td></tr>
-        <tr class="reveal"><td>Найти свободное время.</td><td>Просмотр календаря со свободными слотами.</td></tr>
-        <tr class="reveal"><td>Быстро записаться.</td><td>Запись в пару кликов.</td></tr>
-        <tr class="reveal"><td>Не переживать, что запись потеряется.</td><td>Подтверждение записи.</td></tr>
+        <tr class="reveal"><td>Найти проверенного мастера</td><td>Просмотр мастеров с рейтингом и отзывами</td></tr>
+        <tr class="reveal"><td>Найти свободное время</td><td>Просмотр календаря со свободными слотами</td></tr>
+        <tr class="reveal"><td>Быстро записаться</td><td>Запись в пару кликов</td></tr>
+        <tr class="reveal"><td>Не переживать, что запись потеряется</td><td>Подтверждение записи</td></tr>
       </tbody>
     </table>
   </div>
@@ -1015,10 +1021,10 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d3" style="margin-top:20px;font-size:34px">
       <thead><tr><th>Потребность пользователя (JTBD)</th><th>Функция MVP</th></tr></thead>
       <tbody>
-        <tr class="reveal"><td>Узнать новости отрасли.</td><td>Сбор новостей из нескольких источников.</td></tr>
-        <tr class="reveal"><td>Видеть только главное.</td><td>Фильтрация новостей.</td></tr>
-        <tr class="reveal"><td>Быстро получать информацию.</td><td>Короткий дайджест.</td></tr>
-        <tr class="reveal"><td>Не тратить время на поиск.</td><td>Автоматическая доставка.</td></tr>
+        <tr class="reveal"><td>Узнать новости отрасли</td><td>Сбор новостей из нескольких источников</td></tr>
+        <tr class="reveal"><td>Видеть только главное</td><td>Фильтрация новостей</td></tr>
+        <tr class="reveal"><td>Быстро получать информацию</td><td>Короткий дайджест</td></tr>
+        <tr class="reveal"><td>Не тратить время на поиск</td><td>Автоматическая доставка</td></tr>
       </tbody>
     </table>
   </div>
@@ -1044,7 +1050,7 @@ a{color:#1F89FF;text-decoration:none}
       <div class="flip-card" onclick="flipCard(this)">
         <div class="flip-inner">
           <div class="flip-front"><p class="flip-front-word">Что может пойти не так?</p></div>
-          <div class="flip-back"><p class="flip-back-text">Помогает предусмотреть ошибки и нестандартные сценарии.</p></div>
+          <div class="flip-back"><p class="flip-back-text">Помогает предусмотреть ошибки и&nbsp;нестандартные сценарии.</p></div>
         </div>
       </div>
       <div class="flip-card" onclick="flipCard(this)">
@@ -1064,10 +1070,10 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d2" style="margin-top:32px">
       <thead><tr><th>MVP (обязательно)</th><th>Хорошо бы иметь (потом)</th></tr></thead>
       <tbody>
-        <tr><td>Просмотр доступных слотов.</td><td>Рейтинг и отзывы о работе мастеров.</td></tr>
-        <tr><td>Выбор мастера.</td><td>Фотографии работ мастера.</td></tr>
-        <tr><td>Запись на выбранное время.</td><td>Напоминание о записи.</td></tr>
-        <tr><td>Подтверждение записи.</td><td>Перенос записи и история посещений.</td></tr>
+        <tr><td>Просмотр доступных слотов</td><td>Рейтинг и отзывы о работе мастеров</td></tr>
+        <tr><td>Выбор мастера</td><td>Фотографии работ мастера</td></tr>
+        <tr><td>Запись на выбранное время</td><td>Напоминание о записи</td></tr>
+        <tr><td>Подтверждение записи</td><td>Перенос записи и история посещений</td></tr>
       </tbody>
     </table>
     <div class="important anim d3">Если без функции пользователь всё еще может выполнить работу — <br>ее можно отложить.<div class="imp-l">важно</div></div>
@@ -1093,9 +1099,9 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d2" style="margin-top:32px;font-size:34px">
       <thead><tr><th>Функция</th><th>Описание</th></tr></thead>
       <tbody>
-        <tr><td>Выбор мастера</td><td>Пользователь может просмотреть список мастеров с рейтингом и краткой информацией, чтобы выбрать подходящего специалиста.</td></tr>
-        <tr><td>Выбор свободного слота</td><td>Пользователь может просмотреть календарь с доступными слотами на неделю вперед и выбрать удобное время, чтобы записаться.</td></tr>
-        <tr><td>Подтверждение записи</td><td>После записи пользователь получает уведомление в «Телеграм» с датой, временем и именем мастера, чтобы быть уверенным, что точно записан.</td></tr>
+        <tr><td>Выбор мастера</td><td>Пользователь может просмотреть список мастеров с рейтингом и краткой информацией, чтобы выбрать подходящего специалиста</td></tr>
+        <tr><td>Выбор свободного слота</td><td>Пользователь может просмотреть календарь с доступными слотами на неделю вперед и выбрать удобное время, чтобы записаться</td></tr>
+        <tr><td>Подтверждение записи</td><td>После записи пользователь получает уведомление в «Телеграм» с датой, временем и именем мастера, чтобы быть уверенным, что точно записан</td></tr>
       </tbody>
     </table>
   </div>
@@ -1157,7 +1163,7 @@ a{color:#1F89FF;text-decoration:none}
       <li><span class="n">2.</span><span>Выполните все шаги: изучите вводные данные, определите <br>три–четыре функции продукта на основе JTBD, опишите их <br>и пришлите свой ответ в чат.</span></li>
     </ol>
     <div class="timer-bar anim d3" id="tb43" style="margin-top:40px">
-      <span class="timer-bar-time">10:00</span>
+      <span class="timer-bar-time">5:00</span>
       <div class="timer-sep"></div>
       <button class="ticon" onclick="tStart('tb43',600)">▶</button>
       <button class="ticon" onclick="tPause('tb43')">⏸</button>
@@ -1208,7 +1214,7 @@ a{color:#1F89FF;text-decoration:none}
     <ul class="blist anim d2" style="margin-top:40px">
       <li>Каждая функция отвечает на часть JTBD?</li>
       <li>Функции описаны на уровне действий пользователя, а не технической реализации?</li>
-      <li>Можно ли убрать какую-то функцию, и пользователь всё равно справится с задачей?</li>
+      <li>Можно ли убрать какую-то функцию, и пользователь всё равно справится с&nbsp;задачей?</li>
     </ul>
   </div>
 </div>
@@ -1238,15 +1244,15 @@ a{color:#1F89FF;text-decoration:none}
 <div class="slide lite" id="s50">
   <div class="content">
     <p class="h1 anim d1">Что показывает реальный результат</p>
-    <div class="anim d2" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:48px;align-items:center">
+    <div class="anim d2" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:48px;align-items:start">
       <div>
         <p style="color:#FF4E32;font-size:56px;font-weight:400;margin:0 0 16px">Не показывает результат</p>
         <p style="font-size:44px;color:var(--ink);line-height:1.5;margin:0 0 48px">«Сколько часов вы провели за рулем».</p>
         <p style="color:#01B089;font-size:56px;font-weight:400;margin:0 0 16px">Показывает результат</p>
         <p style="font-size:44px;color:var(--ink);line-height:1.5;margin:0">«Можете ли вы безопасно доехать из точки А в точку Б».</p>
       </div>
-      <div style="display:flex;align-items:center;justify-content:center">
-        <div style="width:360px;height:360px;background:#F0F2FA;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:120px">🚗</div>
+      <div>
+        <img src="images/slide51.png" style="width:100%;object-fit:contain;display:block;border-radius:16px">
       </div>
     </div>
   </div>
@@ -1259,10 +1265,10 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d2" style="margin-top:40px">
       <thead><tr><th>Продукт</th><th>Ключевая метрика</th></tr></thead>
       <tbody>
-        <tr class="reveal"><td>Сервис записи на маникюр</td><td>80% пользователей завершают запись за 2 минуты или меньше.</td></tr>
-        <tr class="reveal"><td>Парсер новостей</td><td>Пользователь читает дайджест не менее 3 раз в неделю.</td></tr>
-        <tr class="reveal"><td>Телеграм-бот для консультаций</td><td>Бот отвечает на 90% вопросов без участия человека.</td></tr>
-        <tr class="reveal"><td>Лендинг курса</td><td>15% посетителей оставляют заявку.</td></tr>
+        <tr class="reveal"><td>Сервис записи на маникюр</td><td>80% пользователей завершают запись за 2 минуты или меньше</td></tr>
+        <tr class="reveal"><td>Парсер новостей</td><td>Пользователь читает дайджест не менее 3 раз в неделю</td></tr>
+        <tr class="reveal"><td>Телеграм-бот для консультаций</td><td>Бот отвечает на 90% вопросов без участия человека</td></tr>
+        <tr class="reveal"><td>Лендинг курса</td><td>15% посетителей оставляют заявку</td></tr>
       </tbody>
     </table>
   </div>
@@ -1272,11 +1278,9 @@ a{color:#1F89FF;text-decoration:none}
 <div class="slide lite" id="s52">
   <div class="content">
     <p class="h1 anim d1">Почему «Полярная звезда»</p>
-    <div class="anim d2" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:48px;align-items:center">
+    <div class="anim d2" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:48px;align-items:start">
       <div class="important" style="margin-top:0">Метрика работает как фильтр: если конкретная функция ее улучшит — добавляем, если нет — откладываем. Без NSM легко увлечься второстепенным и потратить время на то, что не приближает к цели.<div class="imp-l">важно</div></div>
-      <div style="display:flex;align-items:center;justify-content:center">
-        <div style="width:360px;height:360px;background:#F0F2FA;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:120px">⭐</div>
-      </div>
+      <img src="images/slide53.png" style="width:100%;object-fit:contain;display:block;border-radius:16px">
     </div>
   </div>
 </div>
@@ -1300,9 +1304,9 @@ a{color:#1F89FF;text-decoration:none}
     <table class="sp-table anim d2" style="margin-top:32px;font-size:28px">
       <thead><tr><th style="width:42%">JTBD</th><th style="width:22%">Ключевое действие</th><th>Ключевая метрика</th></tr></thead>
       <tbody>
-        <tr class="reveal"><td>Когда я хочу сделать маникюр к&nbsp;важному <br>событию, я хочу быстро найти свободное время у&nbsp;проверенного мастера, чтобы не тратить время на&nbsp;звонки.</td><td>Завершить запись.</td><td>80% пользователей завершают запись <br>за 2 минуты или меньше.</td></tr>
-        <tr class="reveal"><td>Когда я начинаю рабочий день, я хочу быстро <br>узнать главные новости в&nbsp;моей отрасли, <br>чтобы быть в&nbsp;курсе трендов и не тратить час на просмотр десятка сайтов.</td><td>Прочитать дайджест.</td><td>Пользователь читает дайджест <br>не менее 3 раз в неделю.</td></tr>
-        <tr class="reveal"><td>Когда у меня возник вопрос по продукту в&nbsp;нерабочее время, я хочу быстро получить ответ, чтобы не ждать до утра.</td><td>Получить ответ от бота.</td><td>Бот отвечает на 90% вопросов <br>без участия человека.</td></tr>
+        <tr class="reveal"><td>Когда я хочу сделать маникюр к&nbsp;важному <br>событию, я хочу быстро найти свободное время у&nbsp;проверенного мастера, чтобы не тратить время на&nbsp;звонки</td><td>Завершить запись</td><td>80% пользователей завершают запись <br>за 2 минуты или меньше</td></tr>
+        <tr class="reveal"><td>Когда я начинаю рабочий день, я хочу быстро <br>узнать главные новости в&nbsp;моей отрасли, <br>чтобы быть в&nbsp;курсе трендов и не тратить час на просмотр десятка сайтов</td><td>Прочитать дайджест</td><td>Пользователь читает дайджест <br>не менее 3 раз в неделю</td></tr>
+        <tr class="reveal"><td>Когда у меня возник вопрос по продукту в&nbsp;нерабочее время, я&nbsp;хочу быстро получить ответ, чтобы не ждать до утра</td><td>Получить ответ от бота</td><td>Бот отвечает на 90% вопросов <br>без участия человека</td></tr>
       </tbody>
     </table>
   </div>
@@ -1319,7 +1323,7 @@ a{color:#1F89FF;text-decoration:none}
         <tr class="reveal"><td>Количество регистраций</td><td>Сколько пользователей регулярно возвращаются в продукт</td></tr>
         <tr class="reveal"><td>Количество функций</td><td>Насколько успешно работает ключевая функция</td></tr>
         <tr class="reveal"><td>Время, проведенное в продукте</td><td>Насколько быстро пользователь достигает результата</td></tr>
-        <tr class="reveal"><td>Доход</td><td>Насколько хорошо продукт решает задачу пользователя</td></tr>
+        <tr class="reveal"><td>Доход</td><td>Прибыль</td></tr>
       </tbody>
     </table>
   </div>
@@ -1351,9 +1355,9 @@ a{color:#1F89FF;text-decoration:none}
     <p class="h2 anim d1">Сервис записи на маникюр</p>
     <table class="sp-table anim d2" style="margin-top:0;font-size:30px">
       <tbody>
-          <tr class="reveal"><td style="width:32%;font-weight:500;vertical-align:top">Проблема (JTBD)</td><td>Когда я хочу сделать маникюр к важному событию, я хочу быстро найти свободное время у проверенного мастера, чтобы не тратить время на звонки и&nbsp;не переживать, что не успею записаться.</td></tr>
-          <tr class="reveal"><td style="font-weight:500;vertical-align:top">Решение (функции MVP)</td><td>Выбор мастера, календарь свободных слотов, быстрая запись на выбранное время, подтверждение записи через «Телеграм».</td></tr>
-          <tr class="reveal"><td style="font-weight:500;vertical-align:top">Ключевая метрика</td><td>80% пользователей завершают запись за 2 минуты или меньше.</td></tr>
+          <tr class="reveal"><td style="width:32%;font-weight:500;vertical-align:top">Проблема (JTBD)</td><td>Когда я хочу сделать маникюр к важному событию, я хочу быстро найти свободное время у проверенного мастера, чтобы не тратить время на звонки и&nbsp;не переживать, что не успею записаться</td></tr>
+          <tr class="reveal"><td style="font-weight:500;vertical-align:top">Решение (функции MVP)</td><td>Выбор мастера, календарь свободных слотов, быстрая запись на выбранное время, подтверждение записи через «Телеграм»</td></tr>
+          <tr class="reveal"><td style="font-weight:500;vertical-align:top">Ключевая метрика</td><td>80% пользователей завершают запись за 2 минуты или меньше</td></tr>
           <tr class="reveal"><td style="font-weight:500;vertical-align:top">Гипотезы</td><td>Пользователи готовы записываться онлайн, если это быстрее, чем звонок. Рейтинг мастера важен, но не критичен для первой записи. Большинство пользователей записываются с телефона, поэтому интерфейс должен быть мобильно-адаптивным.</td></tr>
           <tr class="reveal"><td style="font-weight:500;vertical-align:top">Стек инструментов</td><td>Фронтенд — Lovable. Бэкенд и база данных — Supabase. Уведомления — Telegram Bot API. Публикация — Lovable.</td></tr>
         </tbody>
@@ -1418,7 +1422,7 @@ a{color:#1F89FF;text-decoration:none}
       <li><span class="n">2.</span><span>Выполните все шаги: прочитайте описание продукта, <br>сформулируйте JTBD, опишите функции MVP, сформулируйте <br>ключевую метрику и гипотезы о пользователе, определите стек инструментов, а затем пришлите свой ответ в чат.</span></li>
     </ol>
     <div class="timer-bar anim d3" id="tb60" style="margin-top:40px">
-      <span class="timer-bar-time">15:00</span>
+      <span class="timer-bar-time">8:00</span>
       <div class="timer-sep"></div>
       <button class="ticon" onclick="tStart('tb60',900)">▶</button>
       <button class="ticon" onclick="tPause('tb60')">⏸</button>
@@ -1448,13 +1452,13 @@ a{color:#1F89FF;text-decoration:none}
   <div class="content-flex">
     <p class="h1 anim d1">Пример правильного ответа</p>
     <div class="scroll-frame anim d2">
-      <div style="font-size:34px;line-height:1.6;color:var(--ink)">
-        <p style="margin:0 0 28px"><b>1. JTBD:<br></b> «Когда у меня возник вопрос по продукту в нерабочее время, я хочу быстро получить ответ, чтобы не ждать до утра и не искать информацию самостоятельно».</p>
+      <div style="font-size:34px;line-height:1.6;color:var(--ink);max-width:1200px">
+        <p style="margin:0 0 28px"><b>1. JTBD:<br></b> «Когда у меня возник вопрос по продукту в нерабочее время, я&nbsp;хочу быстро получить ответ, чтобы не ждать до утра и не искать информацию самостоятельно».</p>
         <p style="margin:0 0 8px"><b>2. Функции MVP:</b></p>
         <ul style="margin:0 0 28px;padding-left:28px;list-style:none">
           <li style="padding-left:24px;position:relative;margin-bottom:8px"><span style="position:absolute;left:0">•</span>Пользователь может задать вопрос боту в Telegram и получить ответ из базы знаний, чтобы решить проблему без ожидания.</li>
           <li style="padding-left:24px;position:relative;margin-bottom:8px"><span style="position:absolute;left:0">•</span>Пользователь может выбрать тему вопроса из меню, чтобы бот быстрее нашел нужный ответ.</li>
-          <li style="padding-left:24px;position:relative"><span style="position:absolute;left:0">•</span>Если бот не знает ответа, пользователь может оставить заявку, и ему ответят утром.</li>
+          <li style="padding-left:24px;position:relative"><span style="position:absolute;left:0">•</span>Если бот не знает ответа, пользователь может оставить заявку, и&nbsp;ему ответят утром.</li>
         </ul>
         <p style="margin:0 0 28px"><b>3. Ключевая метрика</b> — % ответов без участия человека.</p>
         <p style="margin:0 0 8px"><b>4. Гипотезы:</b></p>
@@ -1466,7 +1470,7 @@ a{color:#1F89FF;text-decoration:none}
         <ul style="margin:0;padding-left:28px;list-style:none">
           <li style="padding-left:24px;position:relative;margin-bottom:8px"><span style="position:absolute;left:0">•</span>Telegram Bot API — для создания бота.</li>
           <li style="padding-left:24px;position:relative;margin-bottom:8px"><span style="position:absolute;left:0">•</span>Claude Code / DeepSeek — для генерации кода и интеграции ИИ для ответов.</li>
-          <li style="padding-left:24px;position:relative;margin-bottom:8px"><span style="position:absolute;left:0">•</span>Google Docs, Microsoft Word, Pages или другой текстовый редактор — для создания базы знаний в формате FAQ.</li>
+          <li style="padding-left:24px;position:relative;margin-bottom:8px"><span style="position:absolute;left:0">•</span>Google Docs, Microsoft Word, Pages или другой текстовый редактор&nbsp;— для создания базы знаний в формате FAQ.</li>
           <li style="padding-left:24px;position:relative"><span style="position:absolute;left:0">•</span>Timeweb, REG.RU или другой сервер — для деплоя.</li>
         </ul>
       </div>
@@ -1503,7 +1507,7 @@ a{color:#1F89FF;text-decoration:none}
     <ul class="blist anim d2" style="margin-top:32px">
       <li class="reveal">Зачем нужен паспорт продукта и в каких случаях можно обойтись без него.</li>
       <li class="reveal">Как использовать фреймворк Jobs to be Done для анализа потребностей пользователей.</li>
-      <li class="reveal">Как превращать потребности пользователей в функции продукта <br>и&nbsp;делять MVP.</li>
+      <li class="reveal">Как превращать потребности пользователей в функции продукта <br>и&nbsp;делать MVP.</li>
       <li class="reveal">Как выбирать ключевую метрику и собирать паспорт продукта.</li>
     </ul>
     <div class="important reveal" style="margin-top:40px">Паспорт продукта помогает сформулировать идею, сфокусироваться на&nbsp;главном и дать нейросети достаточно контекста для создания полезного продукта. Потратьте 20–30 минут на&nbsp;его подготовку — это сэкономит часы на&nbsp;доработках в будущем.<div class="imp-l">важно</div></div>
